@@ -1,0 +1,1 @@
+document.writeln("<hr width=\"80%\" color=\"#000000\"><P><CENTER><font size=2>&copy; Copyright 2004. Broken Arrow Band Parents Association.<BR>For technical problems with this webpage, please e-mail <a href=\"mailto:ashlerl@a.cs.okstate.edu\">ashlerl@a.cs.okstate.edu</a>.<BR>Designed by <a href=\"http://www.ashlux.com/\">Ash Lux</a>.</CENTER></font><BR><P>");

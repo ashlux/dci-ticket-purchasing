@@ -1,0 +1,36 @@
+<html>
+
+<head><title>Search Your Site</title></head>
+<body>
+
+<H1>Search Engine Script</H1>
+This is a handy little script that takes all the complexity out of having a "search this site" function on any website.  It utilizes the Google API on the backend, so you do not need a database backend.  Since it uses Google, you are able to index anything that Google can index (PDF files, Word documents, Excel spreadsheets, etc.)  In the end, you only need a single PHP script on your server (results.php).<P>
+
+
+
+
+<B>Search Engine Script Setup Instructions</B><P>
+<OL>
+<TABLE ALIGN=RIGHT BGCOLOR=#0000FF CELLSPACING=1 CELLPADDING=0 WIDTH=170><TR><TD><TABLE CELLSPACING=0><TR><TH BGCOLOR=#CCCCFF><FONT SIZE=-1>Requirements</FONT></TH></TR><TR><TD BGCOLOR=#F0F0FF><TABLE><TR><TD><FONT SIZE=-1>PHP enabled web server that allows usage of <A HREF="http://www.php.net/manual/en/ref.filesystem.php#ini.allow-url-fopen" TARGET="_blank">fopen()</A> (which is enabled by default).</FONT></TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE>
+
+<LI>Edit the results.php file (you need to set your Google API key as well as the site you wish to search near the top of that file).  If you don't have a Google API key, you can get one for free <A HREF="https://www.google.com/accounts/NewAccount?continue=http://api.google.com/createkey&followup=http://api.google.com/createkey" TARGET="_new">from here</A>.</LI><P>
+<LI>Copy the results.php to your web server.</LI><P>
+<LI>Put the HTML below onto the web page(s) you wish to have a search function from.  If some of the HTML pages are not in the same directory as your results.php, you should change <B><FONT SIZE=-1>&lt;FORM METHOD="GET" ACTION="results.php"&gt;</FONT></B> to <B><FONT SIZE=-1>&lt;FORM METHOD="GET" ACTION="http://www.yoursite.com/results.php"&gt;</FONT></B>.</LI><P>
+<LI>Feel free to alter the search box HTML as well as the results.php file to work it into your site's look/feel.  The only thing we ask is that you <FONT COLOR=RED><B>leave the link to us near the search box</B></FONT>.  That way if others want to use the service, they can.  The links will occasionally be validated, and the search script may stop working if it is removed (this will allow us to keep it a 100% free service without any ads).</LI><P>
+<LI><B>Some additional ideas:</B></LI><UL><P>
+<LI>You could remove the <B>Search</B> button if you wish, and just have a box (hitting enter would trigger the search).</LI><P>
+<LI>Instead of hard-coding the site you want to search within the results.php, file, you could pass it as a parameter to the script (via a drop-down list).</LI><P>
+</UL>
+</OL>
+
+
+<TABLE><TR><TD><FORM METHOD="GET" ACTION="results.php"><B><FONT SIZE=-1>Search Your Site:</FONT></B><BR><INPUT NAME="q" TYPE="text" SIZE=30><INPUT TYPE="submit" VALUE="Search"><BR><FONT SIZE=-2><A HREF="http://www.digitalpoint.com/" TARGET="_new">Add this to your site</A></FONT></FORM></TD></TR></TABLE>
+
+
+<P><form name="box"><TABLE ALIGN=CENTER><TR><TD><FONT SIZE=-1><B>The HTML for your website:</B></FONT><BR>
+<textarea rows="7" name="code" cols="60" wrap="on""><TABLE><TR><TD><FORM METHOD="GET" ACTION="results.php"><B><FONT SIZE=-1>Search Your Site:</FONT></B><BR><INPUT NAME="q" TYPE="text" SIZE=30><INPUT TYPE="submit" VALUE="Search"><BR><FONT SIZE=-2><A HREF="http://www.digitalpoint.com/" TARGET="_new">Add this to your site</A></FONT></FORM></TD></TR></TABLE>
+</textarea></TD></TR></TABLE>
+</FORM>
+
+</body>
+</html>

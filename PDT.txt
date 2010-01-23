@@ -1,0 +1,3 @@
+Use identity token when setting up Payment Data Transfer on website:
+
+7bucLdtvPkO6AFulZ321r2xR3CxbYKAfVrxZ2u7q5y7jxq2dLvWsdg5U4x8
